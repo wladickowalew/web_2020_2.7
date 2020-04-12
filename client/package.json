@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browse": "browserify script.js -o bundle.js",
-    "watch": "watchify script.js -o bundle.js -v"
+    "browse": "browserify main.js -o bundle.js",
+    "watch": "watchify main.js -o bundle.js -v",
+    "vue": "browserify main.js -o bundle.js -t vueify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.5.0"
+    "jquery": "^3.5.0",
+    "vue": "^2.6.11",
+    "vueify": "^9.4.1"
   }
 }
